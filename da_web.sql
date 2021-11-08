@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2021 at 07:44 PM
+-- Generation Time: Nov 08, 2021 at 06:41 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.8
 
@@ -33,32 +33,6 @@ CREATE TABLE `chitietdonhang` (
   `MaHang` int(11) NOT NULL,
   `SoLuong` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `chitietdonhang`
---
-
-INSERT INTO `chitietdonhang` (`MaCTDH`, `MaDH`, `MaHang`, `SoLuong`) VALUES
-(1, 1, 1, '1'),
-(2, 1, 10, '1'),
-(3, 2, 13, '1'),
-(4, 2, 42, '1'),
-(5, 3, 37, '2'),
-(6, 3, 12, '1'),
-(7, 4, 48, '1'),
-(8, 4, 32, '1'),
-(9, 5, 4, '2'),
-(10, 5, 39, '2'),
-(11, 6, 5, '1'),
-(12, 6, 40, '2'),
-(13, 7, 41, '2'),
-(14, 8, 35, '1'),
-(15, 8, 48, '1'),
-(16, 8, 40, '2'),
-(17, 9, 20, '2'),
-(18, 9, 41, '3'),
-(19, 9, 46, '1'),
-(20, 10, 15, '5');
 
 -- --------------------------------------------------------
 
@@ -112,52 +86,18 @@ CREATE TABLE `hang` (
 
 INSERT INTO `hang` (`MaHang`, `TenHang`, `GiaBan`, `SoLuong`, `Anh`, `MaSize`, `MaMau`) VALUES
 (1, 'Esprit Ruffle Shirt', '16', '50', 'product-01.jpg', 2, 1),
-(3, 'Esprit Ruffle Shirt', '16', '50', 'product-01.jpg', 2, 2),
-(4, 'Esprit Ruffle Shirt', '16', '50', 'product-01.jpg', 2, 3),
-(5, 'Esprit Ruffle Shirt', '16', '50', 'product-01.jpg', 2, 4),
-(6, 'Esprit Ruffle Shirt', '16', '50', 'product-01.jpg', 3, 1),
-(7, 'Esprit Ruffle Shirt', '16', '50', 'product-01.jpg', 3, 2),
-(8, 'Esprit Ruffle Shirt', '16', '50', 'product-01.jpg', 3, 3),
-(9, 'Esprit Ruffle Shirt', '16', '50', 'product-01.jpg', 3, 4),
-(10, 'Herschel supply', '16', '50', 'product-02.jpg', 3, 1),
-(11, 'Herschel supply', '16', '50', 'product-02.jpg', 3, 2),
 (12, 'Herschel supply', '16', '50', 'product-02.jpg', 3, 3),
-(13, 'Herschel supply', '16', '50', 'product-02.jpg', 3, 4),
-(14, 'Herschel supply', '16', '50', 'product-02.jpg', 4, 1),
-(15, 'Herschel supply', '16', '50', 'product-02.jpg', 4, 2),
-(16, 'Herschel supply', '16', '50', 'product-02.jpg', 4, 3),
-(17, 'Herschel supply', '16', '50', 'product-02.jpg', 4, 4),
-(18, 'Herschel supply', '16', '50', 'product-02.jpg', 1, 1),
-(19, 'Herschel supply', '16', '50', 'product-02.jpg', 1, 3),
-(20, 'Herschel supply', '16', '50', 'product-02.jpg', 1, 2),
-(21, 'Herschel supply', '16', '50', 'product-02.jpg', 2, 1),
-(22, 'Herschel supply', '16', '50', 'product-02.jpg', 2, 3),
 (23, 'Only Check Trouser', '25', '50', 'product-03.jpg', 2, 1),
-(24, 'Only Check Trouser', '25', '50', 'product-03.jpg', 2, 2),
-(25, 'Only Check Trouser', '25', '50', 'product-03.jpg', 2, 3),
-(26, 'Only Check Trouser', '25', '50', 'product-03.jpg', 2, 4),
-(27, 'Only Check Trouser', '25', '60', 'product-03.jpg', 3, 1),
-(28, 'Only Check Trouser', '25', '50', 'product-03.jpg', 3, 3),
-(29, 'Only Check Trouser', '25', '50', 'product-03.jpg', 3, 1),
-(30, 'Classic Trench Coat', '25', '100', 'product-04.jpg', 2, 1),
 (31, 'Classic Trench Coat', '25', '100', 'product-04.jpg', 2, 2),
-(32, 'Classic Trench Coat', '25', '100', 'product-04.jpg', 3, 1),
-(33, 'Classic Trench Coat', '25', '100', 'product-04.jpg', 3, 3),
-(34, 'Classic Trench Coat', '25', '100', 'product-04.jpg', 4, 1),
 (35, 'Front Pocket Jumper', '34', '100', 'product-04.jpg', 2, 1),
 (36, 'Vintage Inspired Classic ', '34', '100', 'product-05.jpg', 2, 1),
-(37, 'Vintage Inspired Classic ', '34', '100', 'product-05.jpg', 3, 1),
-(38, 'Pieces Metallic Printed', '19', '100', 'product-06.jpg', 3, 1),
-(39, 'Pieces Metallic Printed', '19', '100', 'product-06.jpg', 2, 1),
 (40, 'Femme T-Shirt In Stripe', '27', '100', 'product-10.jpg', 2, 1),
-(41, 'Femme T-Shirt In Stripe', '27', '100', 'product-10.jpg', 3, 1),
 (42, 'Herschel supply ', '65', '100', 'product-11.jpg', 3, 2),
-(43, 'Herschel supply ', '65', '100', 'product-11.jpg', 2, 2),
 (44, 'T-Shirt with Sleeve', '20', '100', 'product-13.jpg', 2, 3),
 (45, 'T-Shirt with Sleeve', '20', '100', 'product-13.jpg', 2, 2),
 (46, 'Square Neck Back', '30', '150', 'product-16.jpg', 2, 1),
-(47, 'Square Neck Back', '30', '150', 'product-16.jpg', 2, 3),
-(48, 'Square Neck Back', '30', '150', 'product-16.jpg', 3, 3);
+(52, 'Esprit Ruffle Shirt', '16', '50', 'product-01.jpg', 3, 3),
+(55, 'abc', '50', '100', 'product-11.jpg', 2, 2);
 
 -- --------------------------------------------------------
 
@@ -209,7 +149,6 @@ INSERT INTO `mau` (`MaMau`, `TenMau`) VALUES
 CREATE TABLE `nguoidung` (
   `MaND` int(11) NOT NULL,
   `HoTen` varchar(100) NOT NULL,
-  `GioiTinh` tinyint(1) NOT NULL,
   `DiaChi` varchar(100) NOT NULL,
   `Email` varchar(100) NOT NULL,
   `MatKhau` varchar(50) NOT NULL,
@@ -220,18 +159,19 @@ CREATE TABLE `nguoidung` (
 -- Dumping data for table `nguoidung`
 --
 
-INSERT INTO `nguoidung` (`MaND`, `HoTen`, `GioiTinh`, `DiaChi`, `Email`, `MatKhau`, `MaLND`) VALUES
-(1, 'Nguyễn Thanh Phong', 1, 'Khánh Hòa', 'ntphong@gmail.com', '123456', 3),
-(2, 'Nguyễn Lê Ngọc Như', 0, 'Khánh Hòa', 'nlnnhu@gmail.com', '123456', 2),
-(3, 'Trần Thị Ngọc Bích', 0, 'Khánh Hòa', 'ttnbich@gmail.com', '123456', 2),
-(4, 'Nguyễn Thanh Phượng', 0, 'Khánh Hòa', 'ntphượnng@gmail.com', '123456', 1),
-(5, 'Nguyễn Lê Ngọc Lê', 0, 'Khánh Hòa', 'nlnle@gmail.com', '123456', 1),
-(6, 'Trần Thị Ngọc Thảo', 0, 'Khánh Hòa', 'ttnthao@gmail.com', '123456', 1),
-(7, 'Trần Huy Phú', 1, 'Ninh Hòa', 'thphu@gmail.com', '123456', 1),
-(8, 'Nguyễn Tường Nghiêm', 1, 'Phú Yên', 'ntnghiem@gmail.com', '123456', 1),
-(9, 'Nguyễn Trường Long', 1, 'Ninh Hòa', 'ntlong@gmail.com', '123456', 1),
-(10, 'Trương Thị Thùy Trang', 0, 'Bình Định', 'ttttrang@gmail.com', '123456', 1),
-(12, 'Phú 2', 1, 'NH', 'phu2@gmail.com', '123456', 1);
+INSERT INTO `nguoidung` (`MaND`, `HoTen`, `DiaChi`, `Email`, `MatKhau`, `MaLND`) VALUES
+(1, 'Nguyễn Thanh Phong', 'Khánh Hòa', 'ntphong@gmail.com', '123456', 3),
+(2, 'Nguyễn Lê Ngọc Như', 'Khánh Hòa', 'nlnnhu@gmail.com', '123456', 2),
+(3, 'Trần Thị Ngọc Bích', 'Khánh Hòa', 'ttnbich@gmail.com', '123456', 2),
+(4, 'Nguyễn Thanh Phượng', 'Khánh Hòa', 'ntphượnng@gmail.com', '123456', 1),
+(5, 'Nguyễn Lê Ngọc Lê', 'Khánh Hòa', 'nlnle@gmail.com', '123456', 1),
+(6, 'Trần Thị Ngọc Thảo', 'Khánh Hòa', 'ttnthao@gmail.com', '123456', 1),
+(7, 'Trần Huy Phú', 'Ninh Hòa', 'thphu@gmail.com', '123456', 1),
+(8, 'Nguyễn Tường Nghiêm', 'Phú Yên', 'ntnghiem@gmail.com', '123456', 1),
+(9, 'Nguyễn Trường Long', 'Ninh Hòa', 'ntlong@gmail.com', '123456', 1),
+(10, 'Trương Thị Thùy Trang', 'Bình Định', 'ttttrang@gmail.com', '123456', 1),
+(13, 'Phú 3', 'Bình Định', 'phu3@gmail.com', '123456', 1),
+(14, 'Phú 2', 'NH', 'thphu1@gmail.com', '123456', 1);
 
 -- --------------------------------------------------------
 
@@ -355,7 +295,7 @@ ALTER TABLE `donhang`
 -- AUTO_INCREMENT for table `hang`
 --
 ALTER TABLE `hang`
-  MODIFY `MaHang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `MaHang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `loainguoidung`
@@ -373,7 +313,7 @@ ALTER TABLE `mau`
 -- AUTO_INCREMENT for table `nguoidung`
 --
 ALTER TABLE `nguoidung`
-  MODIFY `MaND` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `MaND` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `size`

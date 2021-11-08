@@ -1,3 +1,7 @@
+<?php
+session_start();
+require './config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,16 +36,21 @@
 					<div class="left-top-bar">
 						Free shipping for standard order over $100
 					</div>
-
 					<div class="right-top-bar flex-w h-full">
+							<?php
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							Sign in
-						</a>
-
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							Sign up
-						</a>
+                                if(isset($_SESSION['khachhang']['HoTen'])){
+                                    $ten=$_SESSION['khachhang']['HoTen'];
+                            ?>
+                                    <a href="./index.php" class="flex-c-m trans-04 p-lr-25"><i class="fa fa-user p-1"></i><?php echo $ten; ?></a>
+                            <?php
+                                }else{
+                            ?>
+                                    <a href="./login.php" class="flex-c-m trans-04 p-lr-25"><i class="fa fa-user p-1"></i>Login</a>
+                            <?php 
+                                }
+                            ?>
+                            <a href="./logout.php" class="flex-c-m trans-04 p-lr-25"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
 					</div>
 				</div>
 			</div>
@@ -70,9 +79,6 @@
 
 							<li>
 								<a href="contact.php">Contact</a>
-							</li>
-							<li>
-								<a href="admin.php">Admin</a>
 							</li>
 						</ul>
 					</div>	
@@ -128,15 +134,21 @@
 				</li>
 
 				<li>
-					<div class="right-top-bar flex-w h-full">
+				<div class="right-top-bar flex-w h-full">
+							<?php
 
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							Sign in
-						</a>
-
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							Sign out
-						</a>
+                                if(isset($_SESSION['khachhang']['HoTen'])){
+                                    $ten=$_SESSION['khachhang']['HoTen'];
+                            ?>
+                                    <a href="./index.php" class="flex-c-m trans-04 p-lr-25"><i class="fa fa-user p-1"></i><?php echo $ten; ?></a>
+                            <?php
+                                }else{
+                            ?>
+                                    <a href="./login.php" class="flex-c-m trans-04 p-lr-25"><i class="fa fa-user p-1"></i>Login</a>
+                            <?php 
+                                }
+                            ?>
+                            <a href="./logout.php" class="flex-c-m trans-04 p-lr-25"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
 					</div>
 				</li>
 			</ul>
@@ -156,9 +168,6 @@
 
 				<li>
 					<a href="contact.php">Contact</a>
-				</li>
-				<li>
-					<a href="admin.php">Admin</a>
 				</li>
 			</ul>
 		</div>
