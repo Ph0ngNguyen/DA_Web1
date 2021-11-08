@@ -81,6 +81,9 @@ require './config.php';
 							<li>
 								<a href="contact.php">Contact</a>
 							</li>
+							<li>
+								<a href="baitap.php">Ecercise</a>
+							</li>
 						</ul>
 					</div>	
 
@@ -169,6 +172,9 @@ require './config.php';
 
 				<li>
 					<a href="contact.php">Contact</a>
+				</li>
+				<li>
+					<a href="baitap.php">Ecercise</a>
 				</li>
 			</ul>
 		</div>

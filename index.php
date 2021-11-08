@@ -90,6 +90,9 @@ session_start();
 							<li>
 								<a href="contact.php">Contact</a>
 							</li>
+							<li>
+								<a href="baitap.php">Ecercise</a>
+							</li>
 						</ul>
 					</div>	
 
@@ -177,6 +180,9 @@ session_start();
 
 				<li>
 					<a href="contact.php">Contact</a>
+				</li>
+				<li>
+					<a href="baitap.php">Ecercise</a>
 				</li>
 			</ul>
 		</div>
