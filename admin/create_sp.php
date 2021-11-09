@@ -16,13 +16,12 @@
          ){
             require '../config.php';
             $Anh=$_FILES['Anh']['name'];
-            $chenAnh = "images/".$Anh;
            $sql="INSERT INTO hang (`TenHang`,`GiaBan`,`SoLuong`,`Anh`,`MaSize`,`MaMau`) 
 
            VALUE ('".$_POST['TenHang']."'
            ,'".$_POST['GiaBan']."'
            ,'".$_POST['SoLuong']."'
-           ,'$chenAnh'
+           ,'$Anh'
            ,'".$_POST['MaSize']."'
            ,'".$_POST['MaMau']."')";
            
